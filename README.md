@@ -176,11 +176,11 @@ After running `main.py`, you will get:
 If you find this work useful, please consider citing it:
 
 ```bibtex
-@article{tmcmae2025,
+@article{tmcmae2026,
   title={TMC-MAE: Topological Magnitude Connectivity Masked Autoencoder for Hyperspectral Image Classification},
   author={Your Name},
   journal={},
-  year={2025}
+  year={2026}
 }
 ```
 
