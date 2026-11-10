@@ -120,7 +120,8 @@ def compute_local_weight_map(hsi_cube, window_size=7, alpha=1.0, beta=1.0):
             except Exception:
                 w = ones / n_pixels
 
-            weight_map[i, j] = w[center_idx]
+             # Use the absolute center weight before image-wide min-max normalization.
+            weight_map[i, j] = np.abs(w[center_idx])
 
     weight_map = np.nan_to_num(weight_map, nan=0.0)
     return normalize_2d(weight_map)
